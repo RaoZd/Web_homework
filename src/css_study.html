@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js">
+    </script>
+    <script>
+        function myFunction()
+        {
+            $("h01").insert("Hello Prototype!");
+        }
+        Event.observe(window,"load",myFunction);
+    </script>
+</head>
+
+<body>
+<h1 id="h01"></h1>
+<!--<button>hello</button>-->
+<button id="btn_test" type="button">test</button>
+<script>
+    Event.observe("btn_test","click",function () {
+        alert("cccccccccccccc")
+    })
+</script>
+<script>
+    window.print();
+</script>
+</body>
+</html>
