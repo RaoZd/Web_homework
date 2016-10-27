@@ -1,6 +1,6 @@
 function init() {
     var mapOption={
-        center:new google.maps.LatLng(40.78270,-73.965310),
+        center:new google.maps.LatLng(23.048180,113.404039),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         zoom:13
     };
@@ -10,7 +10,7 @@ function init() {
 
 function loadScript() {
     var script=document.createElement('script');
-    script.src='http://maps.googleapis.com/maps.api/js?sensor=false&callback=initialize';
+    script.src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAGibUo7pRTyc_ppN__CqDmT84HFB7xjYU&callback=init';
     document.body.appendChild(script);
 }
 
